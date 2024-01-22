@@ -19,6 +19,8 @@ we have a [code of
 conduct](http://contributor-covenant.org/version/1/1/0/) that applies
 to communication around the project.
 
+The initial implementation of this package was funded by [Braintrust Data](https://braintrustdata.com/).
+
 ## API Reference
 
 <dl>
