@@ -1,6 +1,6 @@
 {
   "name": "@codemirror/lang-yaml",
-  "version": "6.2.1",
+  "version": "6.0.0",
   "description": "YAML language support for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
@@ -29,7 +29,7 @@
     "@codemirror/autocomplete": "^6.0.0",
     "@codemirror/language": "^6.0.0",
     "@codemirror/state": "^6.0.0",
-    "@lezer/common": "^1.0.2",
+    "@lezer/common": "^1.2.0",
     "@lezer/yaml": "^1.0.0"
   },
   "devDependencies": {
