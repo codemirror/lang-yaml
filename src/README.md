@@ -26,3 +26,5 @@ The initial implementation of this package was funded by [Braintrust Data](https
 @yaml
 
 @yamlLanguage
+
+@yamlFrontmatter

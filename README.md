@@ -36,4 +36,11 @@ The initial implementation of this package was funded by [Braintrust Data](https
 parser</a>, extended with
 highlighting and indentation information.</p>
 </dd>
+<dt id="user-content-yamlfrontmatter">
+  <code><strong><a href="#user-content-yamlfrontmatter">yamlFrontmatter</a></strong>(<a id="user-content-yamlfrontmatter^config" href="#user-content-yamlfrontmatter^config">config</a>: {content: <a href="https://codemirror.net/docs/ref#language.Language">Language</a> | <a href="https://codemirror.net/docs/ref#language.LanguageSupport">LanguageSupport</a>}) → <a href="https://codemirror.net/docs/ref#language.LanguageSupport">LanguageSupport</a></code></dt>
+
+<dd><p>Returns language support for a document parsed as <code>config.content</code>
+with an optional YAML &quot;frontmatter&quot; delimited by lines that
+contain three dashes.</p>
+</dd>
 </dl>

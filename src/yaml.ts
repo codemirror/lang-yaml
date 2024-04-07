@@ -1,7 +1,9 @@
 import {parser} from "@lezer/yaml"
 import {LRLanguage, delimitedIndent, indentNodeProp,
-        foldNodeProp, foldInside, LanguageSupport} from "@codemirror/language"
-import {SyntaxNode} from "@lezer/common"
+        foldNodeProp, foldInside, Language, LanguageSupport} from "@codemirror/language"
+import {SyntaxNode, parseMixed} from "@lezer/common"
+import {tags, styleTags} from "@lezer/highlight"
+import {parser as frontmatterParser} from "./frontmatter.grammar"
 
 /// A language provider based on the [Lezer YAML
 /// parser](https://github.com/lezer-parser/yaml), extended with
@@ -49,4 +51,26 @@ export const yamlLanguage = LRLanguage.define({
 /// Language support for YAML.
 export function yaml() {
   return new LanguageSupport(yamlLanguage)
+}
+
+const frontmatterLanguage = LRLanguage.define({
+  name: "yaml-frontmatter",
+  parser: frontmatterParser.configure({
+    props: [styleTags({DashLine: tags.meta})]
+  })
+})
+
+/// Returns language support for a document parsed as `config.content`
+/// with an optional YAML "frontmatter" delimited by lines that
+/// contain three dashes.
+export function yamlFrontmatter(config: {content: Language | LanguageSupport}) {
+  let {language, support} = config.content instanceof LanguageSupport ? config.content
+    : {language: config.content, support: []}
+  return new LanguageSupport(frontmatterLanguage.configure({
+    wrap: parseMixed(node => {
+      return node.name == "FrontmatterContent" ? {parser: yamlLanguage.parser}
+        : node.name == "Body" ? {parser: language.parser}
+        : null
+    })
+  }), support)
 }
