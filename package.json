@@ -31,6 +31,7 @@
     "@codemirror/state": "^6.0.0",
     "@lezer/common": "^1.2.0",
     "@lezer/highlight": "^1.2.0",
+    "@lezer/lr": "^1.0.0",
     "@lezer/yaml": "^1.0.0"
   },
   "devDependencies": {
