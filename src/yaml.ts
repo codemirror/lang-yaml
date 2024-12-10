@@ -37,7 +37,7 @@ export const yamlLanguage = LRLanguage.define({
       }),
       foldNodeProp.add({
         "FlowMapping FlowSequence": foldInside,
-        "BlockSequence Pair BlockLiteral":
+        "Item Pair BlockLiteral":
           (node, state) => ({from: state.doc.lineAt(node.from).to, to: node.to})
       })
     ]
