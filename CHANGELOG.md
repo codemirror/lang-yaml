@@ -1,3 +1,11 @@
+## 6.1.2 (2024-12-10)
+
+### Bug fixes
+
+List `@lezer/lr` as a direct dependency for tools that require this.
+
+Make block sequence items, rather than the whole sequence, fold targets.
+
 ## 6.1.1 (2024-04-12)
 
 ### Bug fixes
