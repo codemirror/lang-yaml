@@ -21,6 +21,19 @@ to communication around the project.
 
 The initial implementation of this package was funded by [Braintrust Data](https://braintrustdata.com/).
 
+## Usage
+
+```javascript
+import {EditorView, basicSetup} from "codemirror"
+import {yaml} from "@codemirror/lang-yaml"
+
+const view = new EditorView({
+  parent: document.body,
+  doc: `name: Ferdinand\nage: 93`,
+  extensions: [basicSetup, yaml()]
+})
+```
+
 ## API Reference
 
 <dl>
