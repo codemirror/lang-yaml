@@ -2,7 +2,7 @@
 
 # @codemirror/lang-yaml [![NPM version](https://img.shields.io/npm/v/@codemirror/lang-yaml.svg)](https://www.npmjs.org/package/@codemirror/lang-yaml)
 
-[ [**WEBSITE**](https://codemirror.net/) | [**ISSUES**](https://github.com/codemirror/dev/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/lang-yaml/blob/main/CHANGELOG.md) ]
+[ [**WEBSITE**](https://codemirror.net/) | [**ISSUES**](https://github.com/codemirror/dev/issues) | [**FORUM**](https://discuss.codemirror.net//) | [**CHANGELOG**](https://github.com/codemirror/lang-yaml/blob/main/CHANGELOG.md) ]
 
 This package implements YAML language support for the
 [CodeMirror](https://codemirror.net/) code editor.
