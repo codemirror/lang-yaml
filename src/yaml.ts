@@ -6,7 +6,7 @@ import {tags, styleTags} from "@lezer/highlight"
 import {parser as frontmatterParser} from "./frontmatter.grammar"
 
 /// A language provider based on the [Lezer YAML
-/// parser](https://github.com/lezer-parser/yaml), extended with
+/// parser](https://code.haverbeke.berlin/lezer/yaml), extended with
 /// highlighting and indentation information.
 export const yamlLanguage = LRLanguage.define({
   name: "yaml",
