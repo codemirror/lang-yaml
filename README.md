@@ -1,3 +1,5 @@
+**This repository has moved to https://code.haverbeke.berlin/codemirror/lang-yaml**
+
 <!-- NOTE: README.md is generated from src/README.md -->
 
 # @codemirror/lang-yaml [![NPM version](https://img.shields.io/npm/v/@codemirror/lang-yaml.svg)](https://www.npmjs.org/package/@codemirror/lang-yaml)
